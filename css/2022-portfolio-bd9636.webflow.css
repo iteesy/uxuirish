@@ -145,14 +145,6 @@ figcaption {
   margin-left: auto;
 }
 
-.heading-jumbo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 80px;
-  text-transform: none;
-}
-
 .paragraph-tiny {
   font-size: 12px;
   line-height: 20px;
@@ -206,35 +198,6 @@ figcaption {
 
 .button:active {
   background-color: #43464d;
-}
-
-.button.cc-white-button {
-  padding: 16px 35px;
-  border: 1px none transparent;
-  background-color: #000;
-  color: #202020;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.button.cc-white-button:hover {
-  background-color: hsla(0, 0%, 100%, 0.8);
-}
-
-.button.cc-white-button:active {
-  background-color: hsla(0, 0%, 100%, 0.9);
-}
-
-.paragraph-bigger {
-  margin-bottom: 10px;
-  opacity: 1;
-  font-size: 20px;
-  line-height: 34px;
-  font-weight: 400;
-}
-
-.paragraph-bigger.cc-bigger-light {
-  opacity: 0.6;
 }
 
 .logo-link {
@@ -772,12 +735,13 @@ figcaption {
 }
 
 .proof-image {
-  width: 100%;
+  width: auto;
+  height: auto;
   padding: 24px;
 }
 
 .proof-image.fit {
-  width: 100%;
+  width: auto;
   height: auto;
   padding-right: 8px;
   padding-left: 8px;
@@ -812,24 +776,6 @@ figcaption {
   font-size: 14px;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: auto;
-  height: 400px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  border: 1px solid #000;
-}
-
 .grid-3 {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -853,12 +799,15 @@ figcaption {
   background-color: #fff;
 }
 
-@media screen and (max-width: 991px) {
-  .heading-jumbo {
-    font-size: 56px;
-    line-height: 70px;
-  }
+.image-2 {
+  border: 1px none #000;
+}
 
+.image-3 {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
   .section.cc-contact {
     padding-right: 0px;
     padding-left: 0px;
@@ -945,11 +894,6 @@ figcaption {
     text-align: center;
   }
 
-  .heading-jumbo {
-    font-size: 50px;
-    line-height: 64px;
-  }
-
   .section {
     margin-right: 15px;
     margin-left: 15px;
@@ -957,11 +901,6 @@ figcaption {
 
   .section.cc-contact {
     padding: 15px;
-  }
-
-  .paragraph-bigger {
-    font-size: 16px;
-    line-height: 28px;
   }
 
   .logo-link {
@@ -1048,11 +987,6 @@ figcaption {
   .container {
     width: auto;
     max-width: none;
-  }
-
-  .heading-jumbo {
-    font-size: 36px;
-    line-height: 48px;
   }
 
   .section {
