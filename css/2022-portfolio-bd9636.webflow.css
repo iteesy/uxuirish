@@ -985,18 +985,25 @@ figcaption {
 
 @media screen and (max-width: 479px) {
   .container {
-    width: auto;
+    width: 90vw;
     max-width: none;
+    text-align: left;
   }
 
   .section {
+    width: 100%;
     margin-right: 0px;
     margin-left: 0px;
+  }
+
+  .navigation-items {
+    background-color: #fbfdf4;
   }
 
   .navigation {
     padding-right: 20px;
     padding-left: 20px;
+    background-color: #fbfdf4;
   }
 
   .menu-button {
@@ -1035,6 +1042,7 @@ figcaption {
   }
 
   .footer-wrap {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1062,6 +1070,13 @@ figcaption {
     grid-column-gap: 0vw;
     -ms-grid-columns: 1.25fr;
     grid-template-columns: 1.25fr;
+  }
+
+  .container-media {
+    display: block;
+    overflow: hidden;
+    -o-object-fit: fill;
+    object-fit: fill;
   }
 
   .paragraph {
