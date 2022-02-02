@@ -266,6 +266,7 @@ figcaption {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  background-color: transparent;
 }
 
 .navigation {
@@ -847,7 +848,7 @@ figcaption {
   }
 
   .navigation-items {
-    background-color: #fff;
+    background-color: transparent;
   }
 
   .navigation {
@@ -905,6 +906,10 @@ figcaption {
 
   .logo-link {
     padding-left: 0px;
+  }
+
+  .navigation-items {
+    background-color: transparent;
   }
 
   .navigation {
@@ -1001,8 +1006,8 @@ figcaption {
   }
 
   .navigation {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
     background-color: #fbfdf4;
   }
 

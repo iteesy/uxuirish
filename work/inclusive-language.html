@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Feb 02 2022 17:17:45 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Feb 02 2022 23:45:39 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61f6f3674b6cc52d5da9bdb2" data-wf-site="61f57cd5762e4b53248e4e08">
 <head>
   <meta charset="utf-8">
@@ -19,7 +19,7 @@
 <body class="body">
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
     <div class="navigation-items">
-      <a href="../index.html" class="logo-link w-nav-brand"><img src="../images/Logo.png" width="50" height="100" sizes="75px" srcset="../images/Logo-p-500.png 500w, ../images/Logo-p-800.png 800w, ../images/Logo-p-1080.png 1080w, ../images/Logo-p-1600.png 1600w, ../images/Logo-p-2000.png 2000w, ../images/Logo.png 2048w" alt="" class="logo-image"></a>
+      <a href="../index.html" class="logo-link w-nav-brand"><img src="../images/Logo.png" width="50" height="100" sizes="(max-width: 479px) 100vw, 75px" srcset="../images/Logo-p-500.png 500w, ../images/Logo-p-800.png 800w, ../images/Logo-p-1080.png 1080w, ../images/Logo-p-1600.png 1600w, ../images/Logo-p-2000.png 2000w, ../images/Logo.png 2048w" alt="" class="logo-image"></a>
       <div class="navigation-wrap">
         <nav role="navigation" class="navigation-items w-nav-menu">
           <a href="../index.html" class="navigation-item w-nav-link">work</a>
@@ -44,13 +44,12 @@
         <h3 class="heading-3 work">In the Press</h3>
         <div class="container-media w-container">
           <div class="html-embed w-embed w-iframe"><iframe src="https://news.vmware.com/dei/vmware-inclusive-terminology-journey" width="100%" height="600px" frameborder="0"></iframe></div>
-          <div class="html-embed w-embed w-iframe"><iframe src="https://news.vmware.com/company/replacing-
-            atic-terminology" width="100%" height="600px" frameborder="0"></iframe></div>
+          <div class="html-embed w-embed w-iframe"><iframe src="https://news.vmware.com/company/replacing-problematic-terminology" width="100%" height="600px" frameborder="0"></iframe></div>
         </div>
       </div>
       <div class="callout">
         <h3 class="heading-3 work">Summary</h3>
-        <p>As a building response to the 2020 Black Lives Matter movement, colleagues across VMware formed the Inclusive Terminology Initiative, now part of DEI, to change the way we talk about tech. Our team was tasked to create internal Microsoft Office Add-ins that detect and replace insensitive terms to aid content writers in this effort. <br><br>This case study will be primarily focusing on our first installment for Microsoft Word.</p>
+        <p>As a building response to the 2020 Black Lives Matter movement, colleagues across VMware formed the Inclusive Terminology Initiative, now part of DEI, to change the way we talk about tech. Our team was tasked to create internal Microsoft Office Add-ins to automatically review and replace insensitive terms to aid content writers in this effort.<br><br>This case study will be primarily focusing on our first installment for Microsoft Word.</p>
       </div>
       <div class="content">
         <h3 class="heading-3 work">Background</h3>
@@ -72,14 +71,14 @@
       </div>
       <div class="content">
         <h3 class="heading-3 work">Main Challenges</h3>
-        <p><strong>😬 Preparing for a reactionary audience <br>‍</strong>Though it wasn’t in our scope to be part of the leadership decisions around the initiative, we were aware not all colleagues would accept using the add-in or embrace the initiative’s intents with an open mind. Unfortunately, the original Confluence page announcing tech documentation to retro non-inclusive terms caused a stir in the comments that it had to be archived. How couldn’t we expect the same or if not worse reaction with the launch of our add-ins?<br>‍<br>😔 <strong>Working with Microsoft’s constraints <br>‍</strong>For each step of the project from gathering requirements to design, every “nice-to-have” idea was blocked by the limits of Microsoft’s SDK that were met with trade-offs.<br></p>
+        <p><strong>😬 Preparing for a reactionary audience <br>‍</strong>Though it wasn’t in our scope to be part of the leadership decisions around the initiative, we were aware not all colleagues would accept using the add-in or embrace the initiative’s intents with an open mind. Unfortunately, the original Confluence page announcing tech documentation to retro non-inclusive terms caused a stir in the comments that it had to be archived, how couldn’t we expect the same with the announcement of our add-ins?<br>‍<br>😔 <strong>Working with Microsoft’s constraints <br>‍</strong>For each step of the project from gathering requirements to design, every “nice-to-have” idea was blocked by the limits of Microsoft’s SDK that were met with trade-offs.<br></p>
       </div>
       <div class="content">
         <h3 class="heading-3 work">Research</h3>
         <p><strong>Validating the problem<br></strong>Was a UI to this problem even needed? We were weary to be optimistic about the deliverable. Our engineers were skeptical of the need for this solution, which was where I conducted interviews with VMware content creators and writers to access their processes and pain points. Our scope was on a global audience for AMER, EMEA, and APJ. <br><br>When the initiative kick-started, I found that VMware writers had to do damage control with past and current document content. In the initial user research, we found colleagues were doing ctrl/cmd+F for each non-inclusive word on the terminology list by muscle memory! At the same time, they had the list open on another tab or monitor to check the recommended alternatives. Now, repeat this with hundreds of documents going from one page to over a hundred then times that with thousands of colleagues.<br><br>On a higher level issue, Acrolinx was the official writing assistant tool that was on the brink to cease as the multi-million dollar licensing and need for Acrolinx engineers proved too costly to maintain.<br></p>
       </div>
       <div class="content">
-        <h3 class="heading-3 work">Designs</h3><img src="../images/MITApreview.png" loading="lazy" srcset="../images/MITApreview-p-500.png 500w, ../images/MITApreview-p-800.png 800w, ../images/MITApreview-p-1080.png 1080w, ../images/MITApreview-p-1600.png 1600w, ../images/MITApreview.png 1922w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 67vw, 77vw" alt="User flow of designs" class="proof-image">
+        <h3 class="heading-3 work">Designs</h3><img src="../images/MITApreview.png" loading="lazy" srcset="../images/MITApreview-p-500.png 500w, ../images/MITApreview-p-800.png 800w, ../images/MITApreview-p-1080.png 1080w, ../images/MITApreview-p-1600.png 1600w, ../images/MITApreview.png 1922w" sizes="48px" alt="User flow of designs" class="proof-image">
         <p>We used Microsoft Fluent’s Design System and VMware Clarity Core’s color palette and illustrations.<br><br>As we prepared for the launch along with our other stakeholders such as Employee Comms, it was imperative that this add-in had to be accessible. How unjustified would it be if DEI announced a tool representing inclusion while singling out folks with disabilities?<br><br>So along with all my other projects, this had to be reviewed by our accessibility team, but unlike those other comprehensive projects, this was audited not once, but twice! I’m proud of the collaboration between our engineers to commit to achieving an A+ rating in accessibility before deploying this companywide. A big win was that having a process beyond rectifying a11y Jira issues incited curiosity and eagerness from our engineers to care about a project’s accessibility.<br></p>
       </div>
       <div class="content">
