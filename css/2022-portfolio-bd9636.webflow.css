@@ -739,6 +739,8 @@ figcaption {
   width: auto;
   height: auto;
   padding: 24px;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .proof-image.fit {
@@ -746,6 +748,8 @@ figcaption {
   height: auto;
   padding-right: 8px;
   padding-left: 8px;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .column {
