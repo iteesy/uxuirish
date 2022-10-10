@@ -177,23 +177,28 @@ figcaption {
   background-color: #f4f4f4;
 }
 
+.section.home {
+  margin-bottom: 0px;
+}
+
 .button {
   padding: 12px 25px;
   border-radius: 0px;
   background-color: #1a1b1f;
   -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
   transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+  font-family: Karla, sans-serif;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .button:hover {
-  background-color: #32343a;
-  color: #fff;
+  background-color: #fdff84;
+  color: #000;
 }
 
 .button:active {
@@ -210,6 +215,17 @@ figcaption {
 
 .logo-link:active {
   opacity: 0.7;
+}
+
+.logo-link.w--current {
+  position: static;
+  width: 40%;
+  height: 40%;
+  padding-left: 0px;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
 }
 
 .navigation-item {
@@ -254,6 +270,8 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -274,6 +292,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
   padding: 48px 0px;
@@ -286,7 +305,9 @@ figcaption {
 }
 
 .logo-image {
+  position: static;
   display: block;
+  width: auto;
 }
 
 .navigation-wrap {
@@ -303,6 +324,11 @@ figcaption {
 
 .content {
   margin: 40px 0px;
+}
+
+.content.home {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .work-description {
@@ -337,13 +363,13 @@ figcaption {
 
 .work-image {
   display: block;
-  width: 32%;
-  height: auto;
+  width: 100%;
+  height: 60%;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   padding-left: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -380,6 +406,7 @@ figcaption {
   border-radius: 0px;
   -webkit-transition: border-color 400ms ease;
   transition: border-color 400ms ease;
+  font-family: Karla, sans-serif;
   font-size: 14px;
   line-height: 26px;
 }
@@ -458,6 +485,9 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 40px 0px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -607,6 +637,7 @@ figcaption {
 
 .protected-heading {
   margin-bottom: 30px;
+  font-family: Karla, sans-serif;
 }
 
 .heading {
@@ -662,8 +693,8 @@ figcaption {
 }
 
 .work-tile {
-  width: 340px;
-  height: 340px;
+  width: 100%;
+  height: 200px;
   margin-right: 0px;
   border: 1px solid #000;
   border-radius: 1px;
@@ -677,7 +708,7 @@ figcaption {
 }
 
 .grid {
-  min-width: auto;
+  min-width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -686,10 +717,12 @@ figcaption {
   -webkit-align-content: stretch;
   -ms-flex-line-pack: stretch;
   align-content: stretch;
-  grid-column-gap: 60px;
-  grid-row-gap: 48px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 
 .grid-about {
@@ -701,12 +734,16 @@ figcaption {
   align-items: start;
   grid-column-gap: 64px;
   grid-row-gap: 0px;
-  -ms-grid-columns: 1.75fr 1fr;
-  grid-template-columns: 1.75fr 1fr;
+  -ms-grid-columns: 1.75fr 0.75fr;
+  grid-template-columns: 1.75fr 0.75fr;
 }
 
 .image {
   height: auto;
+}
+
+.image.about {
+  width: 100%;
 }
 
 .html-embed {
@@ -736,6 +773,7 @@ figcaption {
 }
 
 .proof-image {
+  display: block;
   width: auto;
   height: auto;
   padding: 24px;
@@ -750,6 +788,13 @@ figcaption {
   padding-left: 8px;
   -o-object-fit: fill;
   object-fit: fill;
+}
+
+.proof-image.short {
+  display: block;
+  width: 400px;
+  height: auto;
+  padding-top: 0px;
 }
 
 .column {
@@ -789,6 +834,8 @@ figcaption {
   grid-column-gap: 0px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 
 .heading-4 {
@@ -810,6 +857,67 @@ figcaption {
 
 .image-3 {
   display: none;
+}
+
+.div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-4 {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.link-block {
+  position: static;
+  right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.link-block.w--current {
+  width: 8%;
+  height: 8%;
+}
+
+.div-block-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body-3 {
+  background-color: #fbfdf4;
 }
 
 @media screen and (max-width: 991px) {
@@ -1093,6 +1201,13 @@ figcaption {
   }
 }
 
+#w-node-_6cc503eb-b543-2d73-863b-8f16dbdee444-0c8e4e10 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
 #w-node-_9b2922ad-09b1-aebb-0430-7dee623c62c8-228e4e13 {
   -ms-grid-column: 2;
   grid-column-start: 2;
@@ -1113,6 +1228,17 @@ figcaption {
   grid-row-start: 1;
   -ms-grid-row-span: 1;
   grid-row-end: 2;
+}
+
+#w-node-e5616b50-2947-7f15-62e2-eb2914015c9a-f33daabe {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
 }
 
 @media screen and (max-width: 991px) {
