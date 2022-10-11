@@ -774,7 +774,7 @@ figcaption {
 
 .proof-image {
   display: block;
-  width: auto;
+  width: 100%;
   height: auto;
   padding: 24px;
   -o-object-fit: fill;
@@ -795,6 +795,22 @@ figcaption {
   width: 400px;
   height: auto;
   padding-top: 0px;
+}
+
+.proof-image._w-50 {
+  width: 50%;
+}
+
+.proof-image.h-50 {
+  height: auto;
+}
+
+.proof-image._w-35 {
+  width: 35%;
+}
+
+.proof-image._w-75 {
+  width: 75%;
 }
 
 .column {
@@ -832,8 +848,8 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   grid-column-gap: 0px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
