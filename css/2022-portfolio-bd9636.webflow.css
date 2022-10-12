@@ -744,6 +744,7 @@ figcaption {
 
 .image.about {
   width: 100%;
+  height: 100%;
 }
 
 .html-embed {
@@ -764,8 +765,9 @@ figcaption {
 }
 
 .callout {
-  padding: 24px;
+  padding: 12px;
   border: 1px solid #000;
+  background-color: #fbffe8;
 }
 
 .callout.problem {
@@ -1233,6 +1235,17 @@ figcaption {
   grid-row-start: 2;
   -ms-grid-row-span: 1;
   grid-row-end: 3;
+}
+
+#w-node-f058698c-3c4a-599d-f2aa-41e8921e1ae4-228e4e13 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
 }
 
 #w-node-_7cb46f7a-ad68-0336-ba13-ecc5e5aeb69d-3057be95 {
