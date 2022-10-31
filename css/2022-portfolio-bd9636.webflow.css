@@ -1064,6 +1064,13 @@ figcaption {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .grid-about {
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    -ms-grid-columns: 1.75fr;
+    grid-template-columns: 1.75fr;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1166,13 +1173,13 @@ figcaption {
 
 @media screen and (max-width: 479px) {
   .container {
-    width: 90vw;
+    width: auto;
     max-width: none;
     text-align: left;
   }
 
   .section {
-    width: 100%;
+    width: 280px;
     margin-right: 0px;
     margin-left: 0px;
   }
@@ -1209,7 +1216,7 @@ figcaption {
 
   .logo-image {
     display: block;
-    width: 100%;
+    width: auto;
   }
 
   .navigation-wrap {
@@ -1250,6 +1257,11 @@ figcaption {
     width: 100%;
   }
 
+  .body {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
   .work-tile {
     width: 80vw;
     height: auto;
@@ -1263,7 +1275,8 @@ figcaption {
 
   .grid-about {
     width: auto;
-    grid-column-gap: 0vw;
+    grid-column-gap: 12vw;
+    grid-row-gap: 12vw;
     -ms-grid-columns: 1.25fr;
     grid-template-columns: 1.25fr;
   }
@@ -1288,6 +1301,10 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
+  .link-block {
+    display: none;
+  }
+
   .link-block.w--current {
     display: none;
   }
@@ -1305,10 +1322,10 @@ figcaption {
   grid-column-start: 2;
   -ms-grid-column-span: 1;
   grid-column-end: 3;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
   -ms-grid-row-span: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
 }
 
 #w-node-f058698c-3c4a-599d-f2aa-41e8921e1ae4-228e4e13 {
