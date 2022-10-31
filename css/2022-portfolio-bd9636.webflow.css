@@ -181,6 +181,10 @@ figcaption {
   margin-bottom: 0px;
 }
 
+.section.home.hero {
+  margin-bottom: 30px;
+}
+
 .button {
   padding: 12px 25px;
   border-radius: 0px;
@@ -735,6 +739,7 @@ figcaption {
 
 .work-tile.mux {
   height: 240px;
+  border-color: rgba(0, 0, 0, 0.24);
   border-radius: 8px;
 }
 
@@ -977,6 +982,10 @@ figcaption {
 .column-3 {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+.line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 }
 
 @media screen and (max-width: 991px) {
