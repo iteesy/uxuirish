@@ -331,6 +331,10 @@ figcaption {
   margin-bottom: 0px;
 }
 
+.content.hide {
+  display: none;
+}
+
 .work-description {
   display: inline-block;
   width: auto;
@@ -364,11 +368,11 @@ figcaption {
 .work-image {
   display: block;
   width: 100%;
-  height: 60%;
+  height: 84%;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   -webkit-box-orient: vertical;
@@ -385,18 +389,25 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  -webkit-filter: contrast(155%);
-  filter: contrast(155%);
+  -webkit-filter: none;
+  filter: none;
   text-align: center;
-  text-decoration: none;
+  mix-blend-mode: normal;
 }
 
 .work-image:hover {
   opacity: 1;
+  -webkit-filter: none;
+  filter: none;
 }
 
 .work-image:active {
   opacity: 0.7;
+}
+
+.work-image.mux {
+  width: 64%;
+  height: 72%;
 }
 
 .text-field {
@@ -666,12 +677,16 @@ figcaption {
 .body {
   margin-right: 112px;
   margin-left: 112px;
-  background-color: #fbfdf4;
+  background-color: #fff;
   font-family: Karla, sans-serif;
 }
 
 .header {
   margin-bottom: 36px;
+}
+
+.header.home {
+  margin-bottom: 24px;
 }
 
 .footer-icon {
@@ -694,17 +709,28 @@ figcaption {
 
 .work-tile {
   width: 100%;
-  height: 200px;
+  height: 400px;
   margin-right: 0px;
   border: 1px solid #000;
   border-radius: 1px;
+  background-color: transparent;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
 }
 
 .work-tile:hover {
-  background-color: #fdff84;
+  background-color: transparent;
   opacity: 1;
-  -webkit-filter: contrast(200%) grayscale(100%);
-  filter: contrast(200%) grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.work-tile.hide {
+  display: none;
+}
+
+.work-tile.mux {
+  height: 240px;
 }
 
 .grid {
@@ -799,7 +825,7 @@ figcaption {
   padding-top: 0px;
 }
 
-.proof-image._w-50 {
+.proof-image._w-75 {
   width: 50%;
 }
 
@@ -936,6 +962,15 @@ figcaption {
 
 .body-3 {
   background-color: #fbfdf4;
+}
+
+.cover {
+  width: 100%;
+}
+
+.column-3 {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1246,17 +1281,6 @@ figcaption {
   grid-row-start: span 1;
   -ms-grid-row-span: 1;
   grid-row-end: span 1;
-}
-
-#w-node-_7cb46f7a-ad68-0336-ba13-ecc5e5aeb69d-3057be95 {
-  -ms-grid-column: 4;
-  grid-column-start: 4;
-  -ms-grid-column-span: 1;
-  grid-column-end: 5;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
 }
 
 #w-node-e5616b50-2947-7f15-62e2-eb2914015c9a-f33daabe {
