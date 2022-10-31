@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Sun Oct 16 2022 03:07:56 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Oct 25 2022 05:15:05 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61f74f3450a04a6a4530648c" data-wf-site="61f57cd5762e4b53248e4e08">
 <head>
   <meta charset="utf-8">
@@ -49,7 +49,7 @@
       <div class="content">
         <h3 class="heading-3 work">Research</h3>
         <p>Prior to release planning, we had multiple ideas on our roadmap where prioritization needed user input. With those ideas, our engineering team relayed how much effort it would take to hypothetically put them into development. <br><br>In collaboration with another designer, we spent time shadowing our users to list the day-to-day common workflows. To go beyond and put ourselves further in their shoes, we spent half our days training as if we were their role and helping them when possible. Not to the extent where we got to drive a forklift but to put on the highlighter warehouse vests and scan each palette to make sure the inventory matched up to a fulfillment order.<br><br>Then from our user group of 30+ participants, each participant got a certain number of votes and tallied which feature we should work on next as a consideration to their needs. After they were done voting, we held a roundtable discussion (with refreshments!) asking why they made their vote. <br><br>Based on the discussion and votes, we went ahead with focusing on not adding any features, but rather <strong><em>improving</em></strong> the current system&#x27;s search capabilities. <br></p>
-        <div><img src="../images/Inventory-prior.png" loading="lazy" srcset="../images/Inventory-prior-p-500.png 500w, ../images/Inventory-prior-p-1080.png 1080w, ../images/Inventory-prior-p-1600.png 1600w, ../images/Inventory-prior-p-2000.png 2000w, ../images/Inventory-prior.png 2161w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 33vw, 39vw" alt="" class="proof-image _w-50">
+        <div><img src="../images/Inventory-prior.png" loading="lazy" srcset="../images/Inventory-prior-p-500.png 500w, ../images/Inventory-prior-p-1080.png 1080w, ../images/Inventory-prior-p-1600.png 1600w, ../images/Inventory-prior-p-2000.png 2000w, ../images/Inventory-prior.png 2161w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 33vw, 39vw" alt="" class="proof-image _w-75">
           <p class="caption"><em>The original inventory search at the time was quickly developed without UX consulting. </em><br></p>
         </div>
       </div>
@@ -60,7 +60,7 @@
       <div class="content">
         <h3 class="heading-3 work">Persona<br></h3>
         <p>From our day-to-day walkthroughs and interviewing each team, we found which roles would be most affected by this feature - one who helps with navigating the status of an inventory (CSR) and one who checks if inventory has been received (Inventory Clerk). <br></p>
-        <div><img src="../images/Personas.png" loading="lazy" srcset="../images/Personas-p-500.png 500w, ../images/Personas-p-800.png 800w, ../images/Personas.png 1760w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 33vw, 39vw" alt="" class="proof-image _w-50">
+        <div><img src="../images/Personas.png" loading="lazy" srcset="../images/Personas-p-500.png 500w, ../images/Personas-p-800.png 800w, ../images/Personas.png 1760w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 33vw, 39vw" alt="" class="proof-image _w-75">
           <p class="caption"><em>Sample personas</em><br></p>
         </div>
       </div>
@@ -71,7 +71,7 @@
       <div class="content">
         <h3 class="heading-3 work">Designs<br></h3>
         <p>In a two week sprint, we ideated the possible explorations in lo-fi on how the inventory search can be improved while also mapping out the current user flow. This was done on paper prototypes and whiteboards. <br></p>
-        <div><img src="../images/Drive-map.jpeg" loading="lazy" srcset="../images/Drive-map-p-500.jpeg 500w, ../images/Drive-map-p-1600.jpeg 1600w, ../images/Drive-map.jpeg 2000w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 33vw, 39vw" alt="Early iterations of designs" class="proof-image _w-50">
+        <div><img src="../images/Drive-map.jpeg" loading="lazy" srcset="../images/Drive-map-p-500.jpeg 500w, ../images/Drive-map-p-1600.jpeg 1600w, ../images/Drive-map.jpeg 2000w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 33vw, 39vw" alt="Early iterations of designs" class="proof-image _w-75">
           <p class="caption"><em>Workflows were mapped out and divided per phases of the driver&#x27;s journey along with the CSR and Inventory Clerk&#x27;s workflow.</em><br></p>
         </div>
         <p>On the side, we were working with engineers to uncover how the search algorithm could be up to speed with the various inputted attributes and understand the scope of how much of the platform could be searched. We also worked with users what possible filter would be useful - we did not want a separate filter for every identifier only for it not to be useful or accessible. <br><br>To keep it within the scope of inventory, the search would retrieve inventory information of all item statuses based on Adjustment (Items that need any changes to its shipment or packing), Aging (Inventory that doesn&#x27;t sell quickly), and Status (Inactive vs. Active vs. In-Transit).<br><br>With users, we then questioned: Would filters even be utilized? What attributes are most relevant to appear in the results? What attributes are quickly scanned first? <br><br>Each possible exploration was tested with our user groups then with feedback, the new algorithm took into account the most recent search and when the search bar was activated again, it would suggest the next item number in the palette. That meant when checking each specific item of a palette, users would not have to type the attribute again! <br></p>
@@ -79,7 +79,7 @@
       <div class="content">
         <h3 class="heading-3 work">Final Designs<br></h3>
         <p>The project took five months from end-to-end. Once released, we received more feedback from our main users with positives and additional insights for improvements that was iterated later in the year. An example would be adding a toggle to switch from table (original) to card view. <br><br>Card view was received exceptionally well to CSRs who quickly needed to double-check several categories for one palette at a time without scattering through a table which clashes with tens and hundreds of other palettes. This also helped show all items in a palette in one card for CSRs who quickly needed to scan what&#x27;s in a palette immediately for last minute loads. <br><br>Since the release, it was impactful to see in real time how much of a difference it made in users&#x27; workflow. There were less swaps to open Excel, less paperwork scattered across desks, and less re-entering palette identifiers due to the new algorithm. <br></p>
-        <div><img src="../images/Inventory.png" loading="lazy" srcset="../images/Inventory-p-500.png 500w, ../images/Inventory-p-800.png 800w, ../images/Inventory-p-1080.png 1080w, ../images/Inventory-p-1600.png 1600w, ../images/Inventory.png 1710w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 33vw, 39vw" alt="" class="proof-image _w-50">
+        <div><img src="../images/Inventory.png" loading="lazy" srcset="../images/Inventory-p-500.png 500w, ../images/Inventory-p-800.png 800w, ../images/Inventory-p-1080.png 1080w, ../images/Inventory-p-1600.png 1600w, ../images/Inventory.png 1710w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 33vw, 39vw" alt="" class="proof-image _w-75">
           <p class="caption">Sample of hi-fi designs that were implemented<br></p>
         </div>
       </div>
