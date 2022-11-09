@@ -343,9 +343,9 @@ figcaption {
   display: inline-block;
   width: auto;
   margin-bottom: 0px;
-  padding-top: 16px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-left: 12px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -373,7 +373,7 @@ figcaption {
   display: block;
   overflow: hidden;
   width: 100%;
-  height: 84%;
+  height: 80%;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
@@ -411,7 +411,7 @@ figcaption {
 }
 
 .work-image.mux {
-  width: 64%;
+  width: auto;
   height: 72%;
 }
 
@@ -497,10 +497,7 @@ figcaption {
 }
 
 .footer-wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
@@ -680,8 +677,8 @@ figcaption {
 }
 
 .body {
-  margin-right: 112px;
-  margin-left: 112px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #fefffc;
   font-family: Karla, sans-serif;
 }
@@ -715,7 +712,7 @@ figcaption {
 .work-tile {
   overflow: hidden;
   width: 100%;
-  height: 400px;
+  height: 300px;
   margin-right: 0px;
   border-style: solid;
   border-width: 1px;
@@ -753,10 +750,10 @@ figcaption {
   -webkit-align-content: stretch;
   -ms-flex-line-pack: stretch;
   align-content: stretch;
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -893,6 +890,10 @@ figcaption {
   grid-template-rows: auto;
 }
 
+.paragraph.right {
+  text-align: right;
+}
+
 .heading-4 {
   font-family: Karla, sans-serif;
   color: #000;
@@ -922,8 +923,8 @@ figcaption {
 }
 
 .grid-4 {
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -986,6 +987,25 @@ figcaption {
 
 .line {
   border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.outline {
+  padding: 4px 12px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #000;
+}
+
+.footer-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.paragraph-2 {
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1319,7 +1339,7 @@ figcaption {
   }
 }
 
-#w-node-_6cc503eb-b543-2d73-863b-8f16dbdee444-0c8e4e10 {
+#w-node-_5d984f64-4520-e998-94c3-769b848da6e4-0c8e4e10 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
