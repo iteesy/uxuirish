@@ -111,6 +111,11 @@ body {
     font-size: 13px;
   }
 
+  .container::selection {
+    background-color: #0716A0 !important;
+    color: white !important;
+  } /* idk if this works, maybe delete later */
+  
   .headshot {
     display: flex;
     margin: 16%;
@@ -136,11 +141,6 @@ width: auto;
     white-space: normal; /* idk if this works, maybe delete later */
     display: inline-block; /* idk if this works, maybe delete later */
   }
-
-  .container::selection {
-    background-color: #0716A0 !important;
-    color: white !important;
-  } /* idk if this works, maybe delete later */
   
 
 }
