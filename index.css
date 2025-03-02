@@ -136,6 +136,7 @@ width: auto;
 
 
   #work {
+    user-select: text; 
     line-height: 1.4;
     overflow-wrap: break-word; /* idk if this works, maybe delete later */
     word-wrap: break-word; /* idk if this works, maybe delete later */
