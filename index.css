@@ -132,11 +132,12 @@ width: auto;
     white-space: normal; /* idk if this works, maybe delete later */
     display: inline-block; /* idk if this works, maybe delete later */
   }
-  #work:active {
-    background-color: none;
+
+  #work::selection {
+    background-color: #0716A0;
+    color: white;
+  } /* idk if this works, maybe delete later */
   
-    } /* idk if this works, maybe delete later */
-  }
 
 }
 
