@@ -137,7 +137,7 @@ width: auto;
     display: inline-block; /* idk if this works, maybe delete later */
   }
 
-  #work::selection {
+  .container::selection {
     background-color: #0716A0 !important;
     color: white !important;
   } /* idk if this works, maybe delete later */
