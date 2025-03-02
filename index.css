@@ -132,8 +132,10 @@ width: auto;
     white-space: normal; /* idk if this works, maybe delete later */
     display: inline-block; /* idk if this works, maybe delete later */
   }
-  #work {
-    word-wrap: break-word; /* idk if this works, maybe delete later */
+  #work:active {
+    background-color: none;
+  
+    } /* idk if this works, maybe delete later */
   }
 
 }
