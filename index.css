@@ -117,11 +117,9 @@ body::selection {
     font-size: 13px;
   }
 
-
-
   .headshot {
     display: flex;
-    margin: 16%;
+    margin: 0%;
   }
 
   .caption-mobile {
