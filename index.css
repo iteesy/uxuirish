@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #0716A0;
+color: white;
+height: 100vh; 
+}
+  
+
+.container {
+    display: flex;
+    align-items: left; 
+    flex-direction: column; 
+    margin: 32px;
+padding-top: 45vh;
+width: auto;
+}
+
+  
+  /*.about {
+    display: inline-block;
+    overflow: hidden;
+  }*/
+  
+
+.data {
+    display: inline; 
+    font-weight: 400;
+
+}
+
+
+#face {
+  width: 300px;
+}
+
+#name {
+  cursor: pointer;
+  font-size: 14px;
+
+}
+
+#name:hover {
+    background-color:#F6FF54;
+    color:#0716A0;
+    font-weight: 400;    
+}
+
+/*photo*/
+.headshot {
+  position: absolute;
+  right: 12%;
+  top: 30%;
+ display: none;
+ flex-direction: column; 
+ align-items: center;
+}
+
+.caption-mobile {
+display: none;
+}
+
+#name:hover + .headshot {
+  display: flex; 
+}
+
+#work {
+  color: white;
+}
+
+#work span {
+  display: inline-block; 
+  background-color: white; 
+  /*transition: background-color 0.3s ease;*/ /* transition for background */
+}
+
+#work span.hovered {
+  background-color: transparent; /* background color removed on hover */
+  
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  color: white; 
+}
+
+a:hover {
+  background-color:#F6FF54;
+  color:#0716A0;
+}
+/* MOBILE!!!!!!!!!!! */ 
+@media (max-width: 768px) {
+  .container {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .headshot {
+    display: flex;
+    margin: 16%;
+  }
+
+  .caption-mobile {
+    display: flex;
+    position: absolute;
+top: 100%;
+width: auto;
+    }
+    
+  #face {
+    max-width: 120px;
+  }
+
+
+
+  #work {
+    line-height: 1.4;
+    overflow-wrap: break-word; /* idk if this works, maybe delete later */
+    word-wrap: break-word; /* idk if this works, maybe delete later */
+    white-space: normal; /* idk if this works, maybe delete later */
+    display: inline-block; /* idk if this works, maybe delete later */
+  }
+  #work {
+    word-wrap: break-word; /* idk if this works, maybe delete later */
+  }
+
+}
+
