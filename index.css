@@ -96,6 +96,10 @@ a:hover {
 }
 /* MOBILE!!!!!!!!!!! */ 
 @media (max-width: 768px) {
+
+body {
+  height: 100%;
+}
   .container {
     display: inline-block;
     width: 100%;
