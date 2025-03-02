@@ -100,6 +100,12 @@ a:hover {
 body {
   height: 100vh;
 }
+
+body::selection {
+  background-color: #0716A0 !important;
+  color: white !important;
+} /* idk if this works, maybe delete later */
+
   .container {
     display: inline-block;
     width: 100%;
@@ -111,11 +117,8 @@ body {
     font-size: 13px;
   }
 
-  .container::selection {
-    background-color: #0716A0 !important;
-    color: white !important;
-  } /* idk if this works, maybe delete later */
-  
+
+
   .headshot {
     display: flex;
     margin: 16%;
