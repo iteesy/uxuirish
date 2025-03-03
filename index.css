@@ -123,9 +123,10 @@ body::selection {
   }
 
   .caption-mobile {
-    display: flex;
+    display: block;
     position: absolute;
-top: 100%;
+top: 20%;
+left: 12%;
 width: auto;
     }
     
