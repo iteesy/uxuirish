@@ -44,6 +44,7 @@
       <p class="caption">Sup!</p>
     </div>
     <p class="caption-mobile">╰┈➤ Tap on the redaction for a reveal!</p>
+    <p class="caption-mobile" id="mobile-message">╰┈➤ Keep going, you're almost there!!</p>
 
     <footer>
       <p class="footer">Crafted with ♡ | <a href="mailto:hi@uxuirish.xyz">Contact</a></p>
@@ -130,6 +131,16 @@ setInterval(updateClock, 1000); // Update every second
 
 updateClock(); //call function
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if we're on a mobile 
+  if (window.innerWidth <= 768) {
+    // Set a timeout to 5 seconds
+    setTimeout(function() {
+      document.getElementById('mobile-message').classList.add('visible');
+    }, 10000); 
+  }
+});
     </script>
   </body>
 </html>
