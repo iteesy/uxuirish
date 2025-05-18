@@ -6,12 +6,14 @@
             });
 
             // Hydra synthesis code
-            voronoi(200,0.5)  
+            voronoi(300,0.5)  
                 .luma(0.5)
                 .add(shape(1,1).luma(1))
-                .modulate(osc(-200,-50) 
-                    .modulate(osc(0.3).luma()))  
-                .scale(1.2)  
+                .modulate(osc(-300,-25)  // 
+                    .modulate(osc(0.1).luma()))  // Reduced from 0.3 for slower modulation
+                .scale(1.2)
+                .pixelate(20,20)  // test pixelation 
+                .posterize(4)     // reduce fidelity with pixel
                 .blend(o0)
                 .blend(o0)
                 .blend(o0)
