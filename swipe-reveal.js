@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     const workElement = document.querySelector('#work');
+    if (!workElement) return;
+    workElement.addEventListener('touchstart', function() {
+        alert('Touch event detected!');
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const workElement = document.querySelector('#work');
     let startX = 0;
     let isSwiping = false;
     let revealedSpans = new Set();
