@@ -50,29 +50,73 @@ width: auto;
 
 }
 
-#name:hover {
-    background-color:#F6FF54;
-    color:#0716A0;
-    font-weight: 400;    
-}
-
 /*photo*/
 .headshot {
   position: absolute;
   right: 12%;
   top: 30%;
- display: none;
- flex-direction: column; 
- align-items: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  filter: contrast(1.1);
+  transition: all 0.3s ease;
 }
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(7, 22, 160, 0.8);
+  color: white;
+  padding: 4px;  
+  text-align: center;
+  font-size: 12px;
+  z-index: 1;
+  min-height: 36px;  /* Adjust this value to change background height (e.g., 50px, 60px) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caption-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  animation: typing 3s steps(40, end),
+             blink-caret 0.75s step-end infinite;
+  margin: 0 auto;
+  max-width: 90%;  /* Adjust this value to change text width (e.g., 85%, 95%) */
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+.headshot img {
+  position: relative;
+  filter: contrast(110%);
+  mix-blend-mode: difference;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+  filter: contrast(110%) url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.2' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
 
 .caption-mobile {
 display: none;
 }
 
-#name:hover + .headshot {
-  display: flex; 
-}
+
 
 #work {
   color: white;
@@ -128,26 +172,45 @@ body::selection {
 
   .headshot {
     display: flex;
-    margin: 0%;
+    flex-direction: column;
+    position: relative;
+    right: auto;
+    top: auto;
+    margin: 20px 0;
+    width: 100%;
+    align-items: center;
   }
 
-  #face {
-    max-width: 120px;
+  .headshot img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .caption {
+    position: relative;
+    min-height: auto;  /* Adjust this for mobile height if needed */
+    padding: 8px;      /* Adjust this for mobile padding if needed */
   }
 
   .caption-mobile {
     display: block;
-    position: absolute;
-top: 20%;
-left: 12%;
-width: auto;
-    }
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
 
-    #mobile-message {
-      top: 24%;
-      left: 16%;
-    }
+  #mobile-message {
+    top: 24%;
+    left: 16%;
+  }
 
+  #face {
+    max-width: 160px;
+  }
 
   #work {
     user-select: text; 
@@ -158,6 +221,11 @@ width: auto;
     display: inline-block; /* idk if this works, maybe delete later */
   }
   
-
+  .caption-text {
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    max-width: 100%;
+  }
 }
 

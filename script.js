@@ -22,25 +22,16 @@
 
 document.addEventListener("DOMContentLoaded", function() {
       const addAbout = document.getElementsByClassName('about')[0];  
-      addAbout.innerHTML = "<span id='name'> <u>Irish Tee-Sy</u></span> is designing experiences in <span id='work'>spatial awareness and computer vision for emerging technologies.</span>"; 
+      addAbout.innerHTML = "<span id='name'>Irish Tee-Sy</span> is designing experiences in <span id='work'>spatial awareness and computer vision for emerging technologies.</span>"; 
       const nameElement = document.getElementById('name');
-  const headshot = document.querySelector('.headshot'); 
+      const headshot = document.querySelector('.headshot'); 
 
-  // hover effect styles on mouseenter
-  nameElement.addEventListener('mouseenter', function() {
-    nameElement.style.backgroundColor = '#F6FF54';
-    nameElement.style.color = '#0716A0';
-    nameElement.style.fontWeight = '400';
-    headshot.style.display = 'block'; // show .headshot 
-  });
-
-  // remove hover effect when mouseleave
-  nameElement.addEventListener('mouseleave', function() {
-    nameElement.style.backgroundColor = '';
-    nameElement.style.color = '';
-    nameElement.style.fontWeight = '';
-    headshot.style.display = 'none'; // hide .headshot
-  });
+      // Add typing animation to caption
+      const captions = document.querySelectorAll('.caption, .caption-mobile');
+      captions.forEach(caption => {
+        const text = caption.innerHTML;  // Changed from textContent to innerHTML
+        caption.innerHTML = `<span class="caption-text">${text}</span>`;
+      });
 
       //spanify effect to #work 
       const workElement = document.getElementById('work');
@@ -56,8 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
           }
         });
       });
-
-      
     });
 
     function spanify(element) {
