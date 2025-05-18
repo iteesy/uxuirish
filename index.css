@@ -112,7 +112,7 @@ width: auto;
 }
 
 
-.caption-mobile {
+#hint {
 display: none;
 }
 
@@ -160,7 +160,8 @@ body::selection {
 } /* idk if this works, maybe delete later */
 
   .container {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: auto;
     padding-top: 0px;
@@ -171,6 +172,7 @@ body::selection {
   }
 
   .headshot {
+    order: 0;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -193,7 +195,7 @@ body::selection {
     padding: 8px;
   }
 
-  .caption-mobile {
+  #caption-mobile {
     display: block;
     position: relative;
     top: auto;
@@ -221,20 +223,40 @@ body::selection {
     display: inline-block; /* idk if this works, maybe delete later */
   }
   
-  .caption-text {
-    white-space: normal;
-    border-right: none;
-    animation: typing 3s steps(40, end),
-               blink-caret 0.75s step-end infinite;
-    max-width: 100%;
+  .caption .caption-text {
+    display: inline-block;
+    white-space: nowrap;      /* Prevent wrapping during animation */
+    overflow: hidden;         /* Hide overflow during animation */
+    border-right: 2px solid white;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    max-width: 100vw;         /* Ensure it doesn't overflow the viewport */
+    margin: 0 auto;
+  }
+  .caption .caption-text.animation-complete {
+    white-space: normal;      /* Allow wrapping after animation */
   }
 
   .caption-text b {
-    margin-right: 4px;  /* Add space after the action text */
+    margin-right: 4px;  /* add space after the action text */
   }
 
   #clock {
-    display: inline-block;  /* Ensure clock is visible */
+    display: inline-block;  /* clock is visible */
   }
+
+  .about {
+    order: 1;
+  }
+  
+  #hint {
+    display: block;
+    order: 2;
+  }
+
+  .data {
+    order: 3;
+  }
+
+
 }
 

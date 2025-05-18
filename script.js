@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
       const nameElement = document.getElementById('name');
       const headshot = document.querySelector('.headshot'); 
 
-      // Add typing animation to caption
-      const captions = document.querySelectorAll('.caption, .caption-mobile');
+      // typing animation
+      const captions = document.querySelectorAll('.caption');
       captions.forEach(caption => {
         const text = caption.innerHTML;
         caption.innerHTML = `<span class="caption-text">${text}</span>`;
         
-        // Add animation complete class after animation finishes
+        // add animation complete class after animation finishes
         if (caption.classList.contains('caption')) {
           const captionText = caption.querySelector('.caption-text');
           captionText.addEventListener('animationend', () => {
