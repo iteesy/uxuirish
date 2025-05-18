@@ -74,15 +74,6 @@ function updateClock() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Check if we're on a mobile 
-  if (window.innerWidth <= 768) {
-    // Set a timeout to 5 seconds
-    setTimeout(function() {
-      document.getElementById('mobile-message').classList.add('visible');
-    }, 10000); 
-  }
-});
 
 const hydra = new Hydra({
   canvas: document.getElementById('hydraCanvas'),
