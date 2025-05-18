@@ -37,6 +37,18 @@ document.addEventListener("DOMContentLoaded", function() {
       // Initialize clock
       updateClock();
       setInterval(updateClock, 1000);
+
+      if (window.innerWidth <= 768) {
+        let tapCount = 0;
+        workElement.addEventListener('touchend', function(e) {
+          tapCount++;
+          if (tapCount === 3) {
+            Array.from(workElement.querySelectorAll('span')).forEach(span => {
+              span.classList.add('hovered');
+            });
+          }
+        });
+      }
     });
 
     function spanify(element) {
@@ -97,3 +109,4 @@ voronoi(300, 0.5)
   .blend(o0)
   .blend(o0)
   .out();
+
