@@ -73,7 +73,7 @@ width: auto;
   text-align: center;
   font-size: 12px;
   z-index: 1;
-  min-height: 36px;  /* Adjust this value to change background height (e.g., 50px, 60px) */
+  min-height: 36px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +87,7 @@ width: auto;
   animation: typing 3s steps(40, end),
              blink-caret 0.75s step-end infinite;
   margin: 0 auto;
-  max-width: 90%;  /* Adjust this value to change text width (e.g., 85%, 95%) */
+  max-width: 90%;  
 }
 
 @keyframes typing {
@@ -189,8 +189,8 @@ body::selection {
 
   .caption {
     position: relative;
-    min-height: auto;  /* Adjust this for mobile height if needed */
-    padding: 8px;      /* Adjust this for mobile padding if needed */
+    min-height: auto;
+    padding: 8px;
   }
 
   .caption-mobile {
@@ -224,8 +224,17 @@ body::selection {
   .caption-text {
     white-space: normal;
     border-right: none;
-    animation: none;
+    animation: typing 3s steps(40, end),
+               blink-caret 0.75s step-end infinite;
     max-width: 100%;
+  }
+
+  .caption-text b {
+    margin-right: 4px;  /* Add space after the action text */
+  }
+
+  #clock {
+    display: inline-block;  /* Ensure clock is visible */
   }
 }
 

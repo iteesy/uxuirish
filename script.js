@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Add typing animation to caption
       const captions = document.querySelectorAll('.caption, .caption-mobile');
       captions.forEach(caption => {
-        const text = caption.innerHTML;  // Changed from textContent to innerHTML
+        const text = caption.innerHTML;
         caption.innerHTML = `<span class="caption-text">${text}</span>`;
       });
 
@@ -47,6 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
           }
         });
       });
+
+      // Initialize clock
+      updateClock();
+      setInterval(updateClock, 1000);
     });
 
     function spanify(element) {
@@ -66,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
 }
 
-//Time right now 
 function updateClock() {
   const now = new Date();
   let hours = now.getHours();
@@ -79,13 +82,11 @@ function updateClock() {
   seconds = seconds < 10 ? '0' + seconds : seconds;
 
   const timeString = hours + ':' + minutes + ':' + seconds + ' ' + amPm;
-  document.getElementById('clock').textContent = timeString;
+  const clockElement = document.getElementById('clock');
+  if (clockElement) {
+    clockElement.textContent = timeString;
+  }
 }
-
-setInterval(updateClock, 1000); // Update every second
-
-updateClock(); //call function
-
 
 document.addEventListener('DOMContentLoaded', function() {
   // Check if we're on a mobile 
