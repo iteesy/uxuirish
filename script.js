@@ -1,27 +1,27 @@
 alert("JS loaded!");
 
-const hydra = new Hydra({
-    canvas: document.getElementById('hydraCanvas'),
-    detectAudio: false,
-    width: window.innerWidth,
-    height: window.innerHeight
-});
+// const hydra = new Hydra({
+//     canvas: document.getElementById('hydraCanvas'),
+//     detectAudio: false,
+//     width: window.innerWidth,
+//     height: window.innerHeight
+// });
 
-voronoi(300, 0.5)
-    .luma(0.5)
-    .add(shape(1, 1).luma(1))
-    .modulate(
-        osc(-300, -25)
-            .modulate(osc(0.1).luma())
-    )
-    .scale(1.2)
-    .pixelate(20, 20)
-    .posterize(4)
-    .blend(o0)
-    .blend(o0)
-    .blend(o0)
-    .blend(o0)
-    .out();
+// voronoi(300, 0.5)
+//     .luma(0.5)
+//     .add(shape(1, 1).luma(1))
+//     .modulate(
+//         osc(-300, -25)
+//             .modulate(osc(0.1).luma())
+//     )
+//     .scale(1.2)
+//     .pixelate(20, 20)
+//     .posterize(4)
+//     .blend(o0)
+//     .blend(o0)
+//     .blend(o0)
+//     .blend(o0)
+//     .out();
 
 document.addEventListener("DOMContentLoaded", function() {
       const addAbout = document.getElementsByClassName('about')[0];  
