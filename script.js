@@ -31,6 +31,14 @@ document.addEventListener("DOMContentLoaded", function() {
       captions.forEach(caption => {
         const text = caption.innerHTML;
         caption.innerHTML = `<span class="caption-text">${text}</span>`;
+        
+        // Add animation complete class after animation finishes
+        if (caption.classList.contains('caption')) {
+          const captionText = caption.querySelector('.caption-text');
+          captionText.addEventListener('animationend', () => {
+            captionText.classList.add('animation-complete');
+          });
+        }
       });
 
       //spanify effect to #work 
