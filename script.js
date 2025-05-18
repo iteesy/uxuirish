@@ -5,7 +5,6 @@
                 height: window.innerHeight
             });
 
-            // Hydra synthesis code
             voronoi(300,0.5)  
                 .luma(0.5)
                 .add(shape(1,1).luma(1))
